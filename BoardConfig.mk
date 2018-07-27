@@ -27,3 +27,6 @@ TARGET_KERNEL_CONFIG := toxic_enchilada_defconfig
 
 # inherit from the proprietary version
 -include vendor/oneplus/enchilada/BoardConfigVendor.mk
+
+# Inherit from oppo-common
+-include device/oneplus/enchilada/OppoCommon/BoardConfigCommon.mk)   

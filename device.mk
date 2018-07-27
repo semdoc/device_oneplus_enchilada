@@ -22,10 +22,6 @@
 # definition file).
 #
 
-# OppoCommon
-PRODUCT_PACKAGES += \
-    OppoCommon  
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -54,3 +50,7 @@ $(call inherit-product, device/oneplus/sdm845-common/common.mk)
 
 # Inherit from vendor blobs
 #$(call inherit-product, vendor/oneplus/enchilada/enchilada-vendor.mk)
+
+# Inherit from oppo-common
+$(call inherit-product, device/oneplus/enchilada/OppoCommon/common.mk)    
+
